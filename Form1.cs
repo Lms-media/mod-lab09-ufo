@@ -97,7 +97,7 @@ public partial class Form1 : Form {
   private void analysis_Click(object sender, EventArgs e) {
     string basePath = AppContext.BaseDirectory;
     string projectPath = Path.GetFullPath(Path.Combine(basePath, "../../.."));
-    string resultsPath = Path.Combine(projectPath, "result/results.txt");
+    string resultsPath = Path.Combine(projectPath, "result/data.txt");
     string plotPath = Path.Combine(projectPath, "result/plot.png");
     int[] radiuses = { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 };
     foreach(int r in radiuses) {
